@@ -1,13 +1,13 @@
 // Navigation Styles here
 
 nav {
-    // .test;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    border-bottom: 2px dashed @navigation-border;
+    max-width: 800px;
+    margin: 0 auto;
 
     div {
         width: 300px;
@@ -15,11 +15,14 @@ nav {
         justify-content: space-between;
 
         a {
-            padding-right: 30px;
+            padding-right: 20px;
             text-decoration: none;
             color: black;
         }
     }
+}
 
-
+.div-border {
+    border-bottom: 2px dashed @navigation-border;
+    width: 100%;
 }
