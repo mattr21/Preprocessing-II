@@ -188,6 +188,7 @@ nav {
 @media (max-width: 500px) {
   nav {
     flex-wrap: wrap;
+    padding-bottom: 10px;
   }
 }
 @media (max-width: 500px) {
@@ -245,32 +246,74 @@ nav div a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    order: 1;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    order: 2;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -281,9 +324,21 @@ nav div a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
 .home .content-pick .destination .btn {
   background: teal;
@@ -295,8 +350,20 @@ nav div a {
   font-size: 1.6rem;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+    background: #17A2B8;
+  }
+}
 .home .content-pick .destination .btn:hover {
   background: #FFFFFF;
   color: teal;
-  border: 1px solid #17A2B8;
+  border: 1px solid teal;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn:hover {
+    color: #17A2B8;
+    border: 1px solid #17A2B8;
+  }
 }
